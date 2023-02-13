@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-# counter to store n of operations
-# copy and paste while
+
+"""
+This module greedy algorithm allows pasting of contents 
+exceeding target number
+"""
 
 def minOperations(n: int) -> int:
     operations = 0 
