@@ -1,16 +1,23 @@
 #!/usr/bin/python3
 
 """
-This module greedy algorithm allows pasting of contents 
-exceeding target number
+
+This module allows pasting of contents 
+exceeding target number.
+
 """
 
-def minOperations(n: int) -> int:
-    operations = 0 
-    while n > 0:
-        operations += 1
-        if (n & (n - 1)) == 0:
-            n >>= 1
-        else:
-            n -= 1
-    return operations
+def minOperations(n):
+    if n <= 0:
+        return 0
+    result = 0
+    i = 2
+    while i * i <= n:
+        while n % i == 0:
+            result += 1
+            n = n // i
+        i += 1
+    if n > 1:
+        result += 1
+    return result
+
