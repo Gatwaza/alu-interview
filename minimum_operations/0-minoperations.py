@@ -8,6 +8,7 @@ If n is impossible to achieve, return 0
 """
 
 def minOperations(n):
+    
     a = 0
     b = 2
     while n > 1:
