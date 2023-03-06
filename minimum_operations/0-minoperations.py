@@ -7,12 +7,14 @@ Returns an integer
 If n is impossible to achieve, return 0
 """
 
-  def minOperations(n):
-     a = 0
-     b = 2
-     while n > 1:
-         while n % b == 0:
-             a += b
-             n = n / b
-         b += 1
-     return a
+def minOperations(n):
+    if n <= 1:
+        return 0
+
+    i = 2
+    while i * i <= n:
+        if n % i == 0:
+            return i + minOperations(n // i)
+        i += 1
+
+    return n
