@@ -18,3 +18,4 @@ def minOperations(n):
         i += 1
 
     return n
+
