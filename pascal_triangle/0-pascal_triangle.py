@@ -4,6 +4,7 @@
 Pascal's triangle print
 """
 
+
 def pascal_triangle(n):
     """
     returns a list of lists of integers
@@ -26,4 +27,4 @@ def pascal_triangle(n):
         row.append(1)
         triangle.append(row)
 
-    return triangle 
+    return triangle
