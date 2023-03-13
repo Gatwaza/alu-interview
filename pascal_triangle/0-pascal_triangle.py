@@ -1,11 +1,10 @@
 #!/usr/bin/python3
+"""
+Returns a list of lists of integers representing the Pascal's triangle of n.
+An empty list is returned if n <= 0.
+"""
 
-# Return empty list if n is less than or equal to 0
 def pascal_triangle(n):
-    """
-    Returns a list of lists of integers representing the Pascal's triangle of n.
-    An empty list is returned if n <= 0.
-    """
 
     if n <= 0:
         return []
